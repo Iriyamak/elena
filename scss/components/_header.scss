@@ -1,0 +1,26 @@
+.header{
+  background: $color-btn url('../img/header-bg.jpg') no-repeat;
+  background-size: 100%;
+  color: #fff;
+  padding: 50px 0;
+  & .container{
+    text-align: center;
+  }
+  &__logo{
+    font-size: 52px;
+    font-family: Belinda, Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  &__menu{
+    list-style: none;    
+    &-link{
+      padding: 0 15px;
+      font-family: OpenSans, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+
+}
