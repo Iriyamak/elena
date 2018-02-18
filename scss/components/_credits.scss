@@ -1,0 +1,40 @@
+.credits {
+  background-color: $color-btn;
+  padding: 50px 0 70px;
+  color: $color-main;
+  &__title {
+    text-align: center;
+    color: $color-main;
+    font-size: 15px;
+    margin-bottom: 60px;
+    & .fa {
+      padding-right: 10px;
+    }
+  }
+  &__link {
+    font-size: 26px;
+    &:nth-child(1) {
+      font-family: "Belinda", sans-serif;
+    }
+    &:nth-child(2) {
+      font-family: "Nexa", sans-serif;
+    }
+    &:nth-child(3) {
+      font-family: "Cabin", sans-serif;
+    }
+    &:nth-child(4) {
+      font-family: "Nexa", sans-serif;
+      font-weight: bold;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .credits .flex {
+    flex-wrap: wrap;
+  }
+  .credits__link {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

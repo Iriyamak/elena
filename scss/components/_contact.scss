@@ -1,0 +1,35 @@
+.contact {
+  background-color: $color-bg-dark;
+  padding: 67px 0 60px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &-title {
+      padding-left: 10px;
+      margin-bottom: 20px;
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: darken($color-border, 10%);
+        position: absolute;
+        bottom: -80%;
+      }
+      & .fa {
+        padding-right: 10px;
+      }
+    }
+    &-btn {
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .contact .flex {
+    flex-wrap: wrap;
+  }
+  .contact__item {
+    margin-bottom: 20px;
+  }
+}
