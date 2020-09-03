@@ -1,0 +1,38 @@
+.services {
+  padding: 55px 0;
+  background-color: $color-bg-dark;
+  & .flex {
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      margin: 15px 0 20px;
+      font-size: 16px;
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: darken($color-border, 10%);
+        position: absolute;
+        bottom: -80%;
+      }
+    }
+    &-descr {
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .services .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+.support {
+  padding: 65px 0 55px;
+  background-color: $color-bg-dark;
+  &__title {
+    margin-bottom: 35px;
+  }
+  & .fa-life-ring {
+    padding: 0 10px;
+  }
+  &__btn {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+.description {
+  background-color: $color-bg-light;
+  padding: 50px 0 75px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &-title {
+      margin: 35px 0 30px;
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: darken($color-border, 10%);
+        position: absolute;
+        bottom: -80%;
+      }
+    }
+    &-btn {
+      margin-top: 15px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .description .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .description__item {
+    align-items: center;
+    margin-bottom: 20px;
+    &-text {
+      text-align: center;
+    }
+  }
+}

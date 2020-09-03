@@ -1,0 +1,29 @@
+.footer {
+  padding: 15px 0;
+  & b {
+    color: $color-title;
+  }
+  & span {
+    color: $color-text;
+  }
+  &__social i {
+    color: $color-text;
+    padding: 0 10px;
+    transition: 0.5s all;
+    &:hover {
+      transform: scale(2);
+      color: $color-btn;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__social {
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
